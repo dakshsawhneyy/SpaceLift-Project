@@ -6,7 +6,7 @@
     - name: Install Nginx
       ansible.builtin.apt:
         name: nginx
-        state: present
+        state: latest
       when: 
         ansible_facts['os.family'] == 'Debian'
     - name: Create index.html
