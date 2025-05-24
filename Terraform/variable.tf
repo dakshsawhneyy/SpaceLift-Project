@@ -8,5 +8,5 @@ variable "volume_size" {
 
 variable "public_key" {
   type = string
-  default = "/mnt/workspace/tf-key.pub"
+  default = "/mnt/workspace/tf-keyy.pub"
 }
