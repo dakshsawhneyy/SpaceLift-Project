@@ -11,7 +11,7 @@ This repository demonstrates how to build production-ready cloud infrastructure 
 ## Project Structure
 
 ```
-📁 spacelift-terraform-ansible-demo/
+📁 SpaceLift-Project/
 ├── 📁 terraform/
 │   ├── main.tf
 │   ├── output.tf
