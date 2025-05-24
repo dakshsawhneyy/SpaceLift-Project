@@ -1,0 +1,20 @@
+- 
+  name: Install Nginx
+  become: true
+  hosts: all
+  tasks:
+    - name: Install Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+      when: ansible_os_family == "Debian"
+    - name: Create index.html
+      ansible.builtin.copy:
+        dest: /var/www/html/index.html
+        content: "<h1>Hello Daksh Sawhney!</h1>"
+      mode: '0644'
+    - name: Start Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
