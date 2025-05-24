@@ -1,5 +1,4 @@
-- 
-  name: Install Nginx
+- name: Install Nginx
   hosts: all
   become: true
   tasks:
