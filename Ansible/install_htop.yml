@@ -1,0 +1,12 @@
+-
+  name: Install htop
+  hosts: all
+  become: true
+  tasks:
+    - name: Updating Packages
+      ansible.builtin.apt:
+        update_cache: yes
+    - name: Install htop
+      ansible.builtin.apt:
+        name: htop
+        state: present
