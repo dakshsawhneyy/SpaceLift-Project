@@ -11,13 +11,18 @@ This repository demonstrates how to build production-ready cloud infrastructure 
 ## Project Structure
 
 ```
-.
-├── main.tf                  # Terraform configuration to create EC2 instances
-├── inventory.ini            # Dynamic/Static inventory for Ansible
-├── ansible/
-│   └── install_htop.yml     # Ansible playbook to install and configure packages
-├── spacelift/
-│   └── stack.yaml           # Stack configuration for Spacelift CI/CD
+📁 spacelift-terraform-ansible-demo/
+├── 📁 terraform/
+│   ├── main.tf
+│   ├── output.tf
+│   ├── provider.tf
+│   └── variables.tf
+│
+├── 📁 ansible/
+│   ├── install_nginx.yml
+│   └── install_htop.yml
+│
+└── spacelift.yml
 └── README.md
 ```
 
